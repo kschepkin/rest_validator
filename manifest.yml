@@ -1,0 +1,7 @@
+---
+applications:
+- name: rest-service
+  memory: 256M
+  instances: 1
+  host: rest-service
+  path: build/libs/rest-service-0.1.3.jar
