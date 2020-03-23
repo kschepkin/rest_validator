@@ -1,0 +1,41 @@
+{
+  "definitions": {},
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "http://example.com/root.json",
+  "type": "object",
+  "title": "The Root Schema",
+  "required": [
+    "property1",
+    "property2"
+  ],
+  "properties": {
+    "property1": {
+      "$id": "#/properties/property1",
+      "type": "integer",
+      "title": "The Property1 Schema",
+      "default": 0,
+      "examples": [
+        1
+      ]
+    },
+    "property2": {
+      "$id": "#/properties/property2",
+      "type": "string",
+      "title": "The Property2 Schema",
+      "default": "",
+      "examples": [
+        "str"
+      ],
+      "pattern": "^(.*)$"
+    },
+    "property3": {
+      "$id": "#/properties/property3",
+      "type": "boolean",
+      "title": "The Property3 Schema",
+      "default": false,
+      "examples": [
+        true
+      ]
+    }
+  }
+}

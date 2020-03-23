@@ -1,0 +1,9 @@
+version: "3"
+services:
+  restvalidator:
+    image: "kschepkin/rest_validator"
+    container_name: restValidator
+    ports:
+      # This is just an example of a port mapping
+      - "8184:8082"
+    environment:
