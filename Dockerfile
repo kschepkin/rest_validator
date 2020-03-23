@@ -1,4 +1,3 @@
 FROM openjdk:8-jdk-alpine
-ARG JAR_FILE=build/libs/*.jar
-COPY ${JAR_FILE} app.jar
+RUN  curl -L "https://github.com/kschepkin/rest_validator/releases/download/0.1.3/RestValidator-0.1.3.jar" -o /app.jar
 ENTRYPOINT ["java","-jar","/app.jar"]
